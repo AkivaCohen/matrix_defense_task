@@ -28,4 +28,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: $REGISTRY/$IMAGE_NAME:$GITHUB_REF_NAME 
+        tags: "${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.ref.name }}" 
